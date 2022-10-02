@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Initium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">Initium</a>
+      <a href="index.html" class="w3-bar-item w3-button">英語</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#aboutus" class="w3-bar-item w3-button">事業内容</a>
+        <a href="#products" class="w3-bar-item w3-button">製品</a>
+        <a href="initium_jp_contactus.html" class="w3-bar-item w3-button">お問い合わせ</a>
+      </div>        
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#aboutus" class="w3-bar-item w3-button" onclick="toggleFunction()">事業内容</a>
+    <a href="#products" class="w3-bar-item w3-button" onclick="toggleFunction()">製品</a>
+    <a href="initium_jp_contactus.html" class="w3-bar-item w3-button" onclick="toggleFunction()">お問い合わせ</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="header-1 w3-display-middle" id="header">
+    <h1 class="w3-center w3-text-white">人生を変える経験</h1>
+  </div>
+</div>
+
+<!-- 事業内容 Container -->
+<div class="w3-content w3-container w3-padding-64" id="aboutus">
+  <h3 class="w3-center">
+    Initium Technologies は
+  </h3>
+  <h3 class="w3-center"><strong>
+    並外れた
+  </strong></h3>
+  <h3 class="w3-center">
+  ものを生み出す会社です製品と事業。
+    </h3>
+  <p class="w3-center"><em></em></p>
+  <p></p>
+</div>
+
+
+  <!-- Initium Team information -->
+<div> 
+  <div class="mySlides w3-display-container w3-center w3-light-grey w3-padding-64">
+    <img src="./images/Initium_logo1.png" style="width:100%; max-width: 300px;" alt="initiumlogo1">
+    <div class="w3-light-grey w3-container w3-padding-32" id="story">
+      <p class="w3-large w3-center w3-content">CEOのビリーはシンガポール出身です。彼はクリエイティブであり、そのデザイン思考は革命的であると信じています。彼は、最終的に喜びをもたらし、日常生活の中で人生を変える経験を形作る先見の明のあるテクノロジーを設計することを目指しています.</p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center w3-light-grey w3-padding-64">
+    <img src="./images/Initium_logo2.png" style="width:100%; max-width: 300px;" alt="Initium_logo2">
+      <div class="w3-light-grey w3-container w3-padding-32" id="story">
+        <p class="w3-large w3-center w3-content">共同創業者の日高亜は、鹿児島県種子島市出身。 160万人以上の会員がいるマッチングアプリを一人で立ち上げました。彼女は、個人が夢を追求できるように力を与え、サポートしたいと考えています。
+          彼らの財政状況、背景、または現在の環境に影響されることなく。</p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center w3-light-grey w3-padding-64">
+    <img src="./images/Initium_logo3.png" style="width:100%; max-width: 300px;" alt="Initium_logo3">
+      <div class="w3-light-grey w3-container w3-padding-32" id="story">柏木祥太
+        <p class="w3-large w3-center w3-content">共同創業者として、柏木祥太は東京出身です。幼い頃から、彼は起業家になりたいという願望を表明してきました。今日、彼は多くの成功したビジネスを構築し、より豊かなアイデアを実現することを目指しています。 </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Products Container --->
+<div class="w3-display-container w3-padding-64 w3-content w3-center" id="products">
+  <h1>製品</h1>
+  <div class="header-2 w3-display-middle" id="header">
+  </div>
+  <div class="row">
+    <div class="column w3-padding-32">
+      <p class="w3-center w3-hover-opacity">
+        <a href="https://amicaapp.jp/"><img src="./images/Amica.jpg" style="width:100%"></a>
+        <h3>Amica</h3>
+        <p>
+          amicaとは、従来のクラウドファンディングより気軽にお金を集めることのできるアプリです。
+          「今夜〇〇を食べたい」「明日〇〇をしたい」などの小さな夢を叶えることができます。
+        </p>
+    </div>
+    
+    <div class="column w3-padding-32">
+      <p class="w3-center w3-hover-opacity">
+        <a href="https://paters.jp/"><img src="./images/Paters.jpg" style="width:100%"></a>
+        <h3>Paters</h3>
+        <p>
+          paters(ペイターズ)は、夢を追う女性とそれを応援する男性の新しい形のマッチングアプリ
+          として2017年4月にサービスを開始し、現在52万人の会員様にご登録いただいています。
+        </p>
+    </div>
+  
+  </div>
+</div>
+
+<!-- Products Grid --->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <p class="w3-medium">Company 2022 Initium Technologies Pte. Ltd. All rights reserved.</p>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+
+</script>
+
+</body>
+</html>

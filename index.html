@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Initium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">Initium</a>
+      <a href="initium_jp_home.html" class="w3-bar-item w3-button">JPN</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#aboutus" class="w3-bar-item w3-button">About Us</a>
+        <a href="#products" class="w3-bar-item w3-button">Products</a>
+        <a href="initium_en_contactus.html" class="w3-bar-item w3-button">Contact</a>
+      </div>        
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#aboutus" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
+    <a href="#products" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
+    <a href="initium_en_contactus.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="header-1 w3-display-middle" id="header">
+    <h1 class="w3-center w3-text-white">We seek to change lives</h1>
+  </div>
+</div>
+
+<!-- About Us Container -->
+<div class="w3-content w3-container w3-padding-64" id="aboutus">
+  <h3 class="w3-center">
+    Initium Technologies Pte Ltd is a company that creates
+  </h3>
+  <h3 class="w3-center"><strong>
+  extraordinary
+  </strong></h3>
+  <h3 class="w3-center">
+   products & businesses. 
+    </h3>
+  <p class="w3-center"><em></em></p>
+  <p></p>
+</div>
+
+
+  <!-- Initium Team information -->
+<div> 
+  <div class="mySlides w3-display-container w3-center w3-light-grey w3-padding-64">
+    <img src="./images/Initium_logo1.png" style="width:100%; max-width: 300px;" alt="initiumlogo1">
+    <div class="w3-light-grey w3-container w3-padding-32" id="story">
+      <p class="w3-large w3-center w3-content">As CEO, Billy is from Singapore. He is a creative, who believs that design thinking a revolutionary. He aspires to design visionary technologies that will ultimately bring joy and shape life-changing experiences in everyday life.</p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center w3-light-grey w3-padding-64">
+    <img src="./images/Initium_logo2.png" style="width:100%; max-width: 300px;" alt="Initium_logo2">
+      <div class="w3-light-grey w3-container w3-padding-32" id="story">
+        <p class="w3-large w3-center w3-content">As co-founder, Ayumi Hidaka is from Tanegashima, Kagoshima prefecture. She started a matching app with more than 1.6 million members by herself. She hopes to empower and support individauls to be able    able to pursue their dreams
+          without being influenced by their financial situation, background, or current environment.</p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center w3-light-grey w3-padding-64">
+    <img src="./images/Initium_logo3.png" style="width:100%; max-width: 300px;" alt="Initium_logo3">
+      <div class="w3-light-grey w3-container w3-padding-32" id="story">
+        <p class="w3-large w3-center w3-content">As co-founder, Shota is from Tokyo. From a young age, he has expressed his desire to become an entrepreneur. Today, he has built many successful businesses and aspires to turn more rich ideas into reality. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Products Container --->
+<div class="w3-display-container w3-padding-64 w3-content w3-center" id="products">
+  <h1>Products</h1>
+  <div class="header-2 w3-display-middle" id="header">
+  </div>
+  <div class="row">
+    <div class="column w3-padding-32">
+      <p class="w3-center w3-hover-opacity">
+        <a href="https://amicaapp.jp/"><img src="./images/Amica.jpg" style="width:100%"></a>
+        <h3>Amica</h3>
+        <p>
+          Amica is an app that allows you to collect money more easily than traditional crowdfunding.
+        </p>
+    </div>
+    
+    <div class="column w3-padding-32">
+      <p class="w3-center w3-hover-opacity">
+        <a href="https://paters.jp/"><img src="./images/Paters.jpg" style="width:100%"></a>
+        <h3>Paters</h3>
+        <p>
+          Paters is a social networking app that creates high-quality encounters between men and women; where one will be connected with opportunties to find their ideal partners.
+        </p>
+    </div>
+  
+  </div>
+</div>
+
+<!-- Products Grid --->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <p class="w3-medium">Company 2022 Initium Technologies Pte. Ltd. All rights reserved.</p>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+
+</script>
+
+</body>
+</html>

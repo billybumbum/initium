@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Initium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" class="w3-bar-item w3-button">Initium</a>
+      <a href="initium_jp_home.html" class="w3-bar-item w3-button">JPN</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="initium_en_home.html#aboutus" class="w3-bar-item w3-button">About Us</a>
+        <a href="initium_en_home.html#products" class="w3-bar-item w3-button">Products</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>        
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#aboutus" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
+    <a href="#products" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h1 class="w3-center w3-padding-48">Leave us a message</h1>
+          <p>We’d love to hear from you and show you more of our work! Just fill out the form and you will hear from one of us.</p>
+        <form action="https://formspree.io/f/mqkjbplg" method="POST">
+        <label>
+        <p><input type = "name" name = "name" class ="w3-input w3-padding-16 w3-border" type ="text" placeholder ="Name" required></p>
+        </label>
+
+        <label>
+        <p><input type = "email" name = "email" class ="w3-input w3-padding-16 w3-border" type ="text" placeholder ="Email" required></p>
+        </label>
+
+        <label>
+          <p><input type = "message" name = "message" class ="w3-input w3-padding-16 w3-border" type ="text" placeholder ="Message" style = "height: 200px;" required></p>
+        </label>
+
+        <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  
+   
+  
+  
+  </script>
+  
+
+</body>
+</html>

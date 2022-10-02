@@ -1,0 +1,78 @@
+<style>
+
+body{
+  font-family: "Inter";
+}
+
+body, html, h1,h2,h3,h4,h5,h6 {
+  height: 100%;
+  color: #000;
+  line-height: 1.8;
+  font-family: "Inter";
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* First image (Background. Full height) */
+.bgimg-1 {
+  background-image: url('./images/ball.gif');
+  min-height: 100%;
+  font-family: "Inter";
+} 
+
+/* Initium logo (Logo) */
+img1 {
+  width: auto;
+  height: auto;
+} 
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* "We seek to change lives" */
+.header-1 {
+  text-align: center;
+  color: white;
+}
+/* "Applications" */
+.header-2 {
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width:100%;
+    padding: 5px;
+  }
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 667px;
+  }
+}
+</style>
